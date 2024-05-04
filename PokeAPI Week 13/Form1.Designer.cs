@@ -46,6 +46,11 @@
             this.label7 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.button2 = new System.Windows.Forms.Button();
+            this.label9 = new System.Windows.Forms.Label();
+            this.lblIsLegendary = new System.Windows.Forms.Label();
+            this.label11 = new System.Windows.Forms.Label();
+            this.lblFormSwitching = new System.Windows.Forms.Label();
             this.groupBox1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -202,6 +207,10 @@
             // 
             // groupBox1
             // 
+            this.groupBox1.Controls.Add(this.lblFormSwitching);
+            this.groupBox1.Controls.Add(this.label11);
+            this.groupBox1.Controls.Add(this.lblIsLegendary);
+            this.groupBox1.Controls.Add(this.label9);
             this.groupBox1.Controls.Add(this.label8);
             this.groupBox1.Controls.Add(this.label7);
             this.groupBox1.Controls.Add(this.label6);
@@ -224,11 +233,59 @@
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Pokemon Information:";
             // 
+            // button2
+            // 
+            this.button2.Location = new System.Drawing.Point(36, 255);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(158, 25);
+            this.button2.TabIndex = 23;
+            this.button2.Text = "Further Information";
+            this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
+            // 
+            // label9
+            // 
+            this.label9.AutoSize = true;
+            this.label9.Location = new System.Drawing.Point(186, 43);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(63, 13);
+            this.label9.TabIndex = 22;
+            this.label9.Text = "Legendary: ";
+            // 
+            // lblIsLegendary
+            // 
+            this.lblIsLegendary.AutoSize = true;
+            this.lblIsLegendary.Location = new System.Drawing.Point(247, 43);
+            this.lblIsLegendary.Name = "lblIsLegendary";
+            this.lblIsLegendary.Size = new System.Drawing.Size(41, 13);
+            this.lblIsLegendary.TabIndex = 23;
+            this.lblIsLegendary.Text = "label10";
+            this.lblIsLegendary.Click += new System.EventHandler(this.label10_Click);
+            // 
+            // label11
+            // 
+            this.label11.AutoSize = true;
+            this.label11.Location = new System.Drawing.Point(186, 81);
+            this.label11.Name = "label11";
+            this.label11.Size = new System.Drawing.Size(82, 13);
+            this.label11.TabIndex = 24;
+            this.label11.Text = "Form Switching:";
+            // 
+            // lblFormSwitching
+            // 
+            this.lblFormSwitching.AutoSize = true;
+            this.lblFormSwitching.Location = new System.Drawing.Point(274, 81);
+            this.lblFormSwitching.Name = "lblFormSwitching";
+            this.lblFormSwitching.Size = new System.Drawing.Size(41, 13);
+            this.lblFormSwitching.TabIndex = 25;
+            this.lblFormSwitching.Text = "label12";
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.button2);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.txbSpecies);
@@ -262,6 +319,11 @@
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.GroupBox groupBox1;
+        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Label lblFormSwitching;
+        private System.Windows.Forms.Label label11;
+        private System.Windows.Forms.Label lblIsLegendary;
+        private System.Windows.Forms.Label label9;
     }
 }
 
